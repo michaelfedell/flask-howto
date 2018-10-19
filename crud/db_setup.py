@@ -1,5 +1,3 @@
-import sys
-
 from sqlalchemy import Column, ForeignKey, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
@@ -19,7 +17,7 @@ class Restaurant(Base):
     name = Column(String(80), nullable=False)
 
 
-class Menu(Base):
+class MenuItem(Base):
     __tablename__ = 'menu_item'
 
     id = Column(Integer, primary_key=True)

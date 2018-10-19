@@ -12,9 +12,9 @@ Make sure you have the following installed (use of fresh conda environment encou
 
 - `conda install flask`
 - `conda install sqlalchemy`
-- `conda install `
-- `conda install `
-- `conda install `
+- `conda install`
+- `conda install`
+- `conda install`
 
 
 ## Concepts
@@ -53,7 +53,7 @@ Use of an ORM typically involves the following 4 steps:
 
 - Configuration
   - set up dependencies and bind to SQLAlchemy Engine
-  - should be mostly consistent project-to-project
+  - should be mostly **consistent** project-to-project
   - beginning will create *declarative base*
   - end of block will create or connect to database (and add tables or columns)
 - Class
@@ -68,6 +68,5 @@ Use of an ORM typically involves the following 4 steps:
   - must pass an attribute to each column creation to specify dtype
   - syntax: `columnName = Column(attributes, ...)`
   - example attributes = {`String(250)`, `Integer`, `relationship(Class)`, `nullable=False`, `primary_key=True`, `ForeignKy('some_table.id')`, etc}
-  - 
 
 Implementation for the above [demonstrated here](./db_setup.py)
